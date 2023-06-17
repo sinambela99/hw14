@@ -14,6 +14,7 @@ import {
   PopoverTrigger,
   Skeleton,
   Text,
+  Image
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Wrapper from "@/components/Wrapper";
@@ -22,7 +23,7 @@ import Link from "next/link";
 import { deleteBook, getBookDetailById } from "@/modules/fetch";
 import { useAuth } from "@/modules/context/authContext";
 import { prisma } from "@/utils/prisma";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function BookDetails({ book }) {
   const router = useRouter();

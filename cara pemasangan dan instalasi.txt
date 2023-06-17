@@ -1,0 +1,14 @@
+1.Buka VScode atau code editor yang kita pakai kemudian clone project tersebut
+
+2.Buka terminal pada vscode kemudian arahkan ke direktori file backend dengan cara ketik pada terminal yaitu "cd backend"
+
+3.Hal yang kita lakukan pertama sekali yaitu menginstal dependencies yang perlu dalam hal ini saya menggunakan yarn
+dengan cara mengetik di terminal "npm install --global yarn ".Setelah itu ketik pada terminal yaitu "yarn install",jika tidak bisa melakukan penginstalan seperti dalam kasus saya karena menggunakan operasi sistem windows maka saya melakukan perintah pada terminal "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted" kemudian saya ketik lagi "yarn install"
+
+4.Create database pada psql pada kasus ini saya menggunakan nama databasenya yaitu "mydatabase"
+
+5.Kemudian pada terminal ketik "yarn prisma generate"
+
+6.Selanjutnya create file .env dan isi URL databasenya dengan cara copy "DATABASE_URL=postgresql://postgres:12345@localhost:5432/mydatabase" dan lakukan konfigurasi JWT_SECRET pada .env,Kemudian lakukan migrasi pada program dengan cara ketik "yarn migrate" pada terminal.
+
+7.Dan running program dengan cara "npm run dev"

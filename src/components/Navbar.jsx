@@ -35,13 +35,13 @@ const Navbar = () => {
       justify="space-between"
       wrap="wrap"
       padding="1rem"
-      bg="teal.500"
+      bg="red.500"
       color="white"
     >
       <Link href="/">
         <Flex align="center" mr={5} cursor="pointer">
           <Text fontSize="xl" fontWeight="bold">
-            My Website
+            BOOKS LIST
           </Text>
         </Flex>
       </Link>

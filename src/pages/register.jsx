@@ -64,7 +64,7 @@ const Register = () => {
 
             <FormControl isRequired>
               <FormLabel>Name</FormLabel>
-              <Input type="name" name="name" placeholder="Enter your mame" />
+              <Input type="name" name="name" placeholder="Enter your name" />
             </FormControl>
 
             <FormControl isRequired>
